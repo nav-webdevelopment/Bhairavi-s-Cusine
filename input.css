@@ -4,21 +4,23 @@
 html {
 	font-size: 10px;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
 	background: var(--lightPurple-2);
 	overflow-x: hidden;
+	overflow-y: hidden;
 	visibility: hidden;
 }
 
 section {
-	padding: 100px 0;
+	padding: 40px 0;
 }
 
 @media only screen and (max-width: 767px) {
 	section {
-		padding: 50px 0;
+		padding: 20px 0;
 	}
 }
 
@@ -279,6 +281,7 @@ a {
 	.button__wrapper {
 		text-align: left;
 	}
+
 	.hero__left__wrapper {
 		margin: 0 auto;
 	}
@@ -300,7 +303,7 @@ a {
 
 /* end hero section styles */
 /* info section styles */
-.info__wrapper{
+.info__wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -313,10 +316,12 @@ a {
 	width: 100%;
 	margin: 0 auto;
 }
-.info__right__wrapper{
+
+.info__right__wrapper {
 	max-width: 400px;
 }
-.info__right__heading1{
+
+.info__right__heading1 {
 	font-family: Poppins;
 	font-size: 2.5rem;
 	font-weight: 600;
@@ -325,7 +330,8 @@ a {
 	text-align: left;
 	color: var(--black-1);
 }
-.info__right__heading2{
+
+.info__right__heading2 {
 	font-family: Poppins;
 	font-size: 1.8rem;
 	font-weight: 600;
@@ -335,42 +341,49 @@ a {
 	color: var(--black-1);
 	padding-left: 1rem;
 }
-.info__para{
+
+.info__para {
 	font-weight: 400;
 	max-width: 470px;
 	padding-left: 1.3rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	font-size: 1.4rem;
 	color: var(--black-2);
 }
+
 @media only screen and (min-width: 768px) {
-	.info__wrapper{
+	.info__wrapper {
 		flex-direction: row;
 		gap: 0;
 	}
 
-	.info__right{
+	.info__right {
 		flex: 3;
 	}
-	.info__left{
+
+	.info__left {
 		flex: 4;
 	}
-	.info__right__heading1{
+
+	.info__right__heading1 {
 		font-size: 3rem;
 		text-align: left;
 		margin-bottom: 3rem;
 
 	}
-	.info__right__wrapper{
+
+	.info__right__wrapper {
 		max-width: none;
 		margin: 0 auto;
 	}
-	.info__para{
+
+	.info__para {
 		margin-bottom: 4rem;
 	}
-	
+
 
 }
+
 @media only screen and (max-width: 900px) {
 
 	.info__left,
@@ -378,6 +391,7 @@ a {
 		flex: 1;
 	}
 }
+
 /* end info section styles */
 
 /* what do you like styles */
@@ -386,12 +400,16 @@ a {
 	margin-bottom: 3rem;
 	font-weight: 600;
 	color: var(--black-1);
+	margin: 0 auto;
+
 }
 
 .likeGrid__wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 	gap: 1rem;
+	margin: 0 auto;
+
 }
 
 .likeGrid__item {
@@ -409,6 +427,7 @@ a {
 .likeGrid__item__info {
 	flex: 5;
 }
+
 .likeGrid__item__title {
 	font-size: 1.6rem;
 	line-height: 1.3em;
@@ -416,25 +435,30 @@ a {
 	color: var(--black-1);
 	margin-bottom: 0.5rem;
 }
-.linkGrid__item__para{
+
+.linkGrid__item__para {
 	font-weight: 400;
 	margin-bottom: 2rem;
 	font-size: 1.4rem;
 	color: var(--black-2);
 }
+
 @media only screen and (min-width: 768px) {
 	.likeGrid__title {
 		font-size: 3rem;
+		padding: 0rem 5rem;
+		margin-bottom: 3rem;
 	}
 
 	.likeGrid__wrapper {
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		gap: 3rem;
+		padding: 0 7rem;
 	}
 
 	.likeGrid__item {
 		flex-direction: row;
-		padding: 1.5rem;
+		padding: .5rem;
 		gap: 1rem;
 	}
 
@@ -442,8 +466,9 @@ a {
 		font-size: 2.4rem;
 		margin-bottom: 1rem;
 	}
+
 	.likeGrid__item__img {
-		max-width: 90px;
+		max-width: 70px;
 	}
 }
 
