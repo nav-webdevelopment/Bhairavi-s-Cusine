@@ -131,8 +131,8 @@ a {
 		display: block;
 		position: absolute;
 		color: var(--black-1);
-		right: 1rem;
-		top: 1rem;
+		right: 1.8rem;
+		top: 2rem;
 		cursor: pointer;
 	}
 
@@ -142,7 +142,7 @@ a {
 		left: 100%;
 		top: 0;
 		height: 100vh;
-		width: 80%;
+		width: 60%;
 		background: var(--lightPurple-1);
 		display: flex;
 		align-items: center;
@@ -151,6 +151,7 @@ a {
 		transform: translate(0%);
 		overflow: hidden;
 		transition: 0.3s ease-in transform;
+		border-radius: 20rem 0 0 7rem;
 	}
 
 	.nav__list.show {
@@ -708,7 +709,8 @@ a {
 		margin-bottom: .5rem;
 		text-align: left;
 	}
-	.chef__para{
+
+	.chef__para {
 		font-size: 1.6rem;
 		max-width: 350px;
 	}
@@ -738,8 +740,155 @@ a {
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 	}
+}
+
+/* Chef Styles End*/
+/* newsletter_section */
+.newsletter__wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--purple-2);
+	border-radius: 8px;
+	padding: 1.5rem;
+	gap: 2rem;
+	margin-bottom: 4rem;
+}
+
+.newsletter__heading {
+	font-size: 1.8rem;
+	color: var(--black-1);
+	font-weight: 600;
+	margin-bottom: 1.3rem;
+}
+
+.newsletter__para {
+	font-size: 1.4rem;
+	color: var(--black-2);
+	font-weight: 500;
+}
+
+.newsletter__rightwrapper form {
+	position: relative;
+	width: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.newsletter__rightwrapper label {
+	width: 100%;
+}
+
+.newsletter__rightwrapper input {
+	width: 100%;
+	font-size: 1.4rem;
+	padding: 1.5rem 1rem;
+	border: none;
+}
+
+.newsletter__rightwrapper button[type='submit'] {
+	background-color: var(--purple-1);
+	color: var(--white-1);
+	border: none;
+	font-size: 1.4rem;
+	padding: 0 2rem;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.newsletter__rightwrapper input::placeholder {
+	color: rgb(168, 166, 166);
+}
+
+@media only screen and (min-width: 768px) {
+	.newsletter__wrapper {
+		flex-direction: row;
+		padding: 5rem;
+		align-items: center;
+	}
+
+	.newsletter__rightwrapper,
+	.newsletter__leftwrapper {
+		flex: 1;
+	}
+
+	.newsletter__heading {
+		font-size: 3.6rem;
+		margin-bottom: 2rem;
+	}
+
+	.newsletter__para {
+		font-size: 1.8rem;
+		max-width: 400px;
+	}
+
+	.newsletter__rightwrapper {
+		max-width: 450px;
+		border-radius: 12px;
+	}
+
+	.newsletter__rightwrapper input {
+		font-size: 1.8rem;
+		padding: 2rem;
+	}
+
+	.newsletter__rightwrapper button[type='submit'] {
+		font-size: 1.8rem;
+		padding: 0 3rem;
+	}
+}
+
+/* Footer styles */
+footer {
+	background: var(--lightPurple-1);
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+	border-radius: 18px 18px 0 0;
+}
+
+.footer__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	align-items: center;
+}
+.footer__copyright{
+	max-width: 250px;
+	text-align: center;
+}
+.copyright__text{
+	font-size: 1.4rem;
+}
+@media only screen and (min-width: 768px) {
+	.footer__wrapper{
+		flex-direction: row;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		/* justify-content: space-between; */
+	}
+	.copyright__text{
+		font-size: 1.4rem;
+		text-align: right;
+
+	}
+	.footer__copyright{
+		max-width: 100%;
+		flex: 1;
+	}
+	.footer__socials{
+	flex: 1;
+	text-align: center;
+	}
+	.footer__logo{
+	flex: 1;
+	}
 
 }
 
 
-/* Chef Styles End*/
+
+/*End Footer styles */
+
+/*End newsletter_section */
