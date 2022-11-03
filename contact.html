@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Bhairavi's Cuisine</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./input.css">
+</head>
+
+<body>
+    <!-- Nav Section -->
+    <div class="nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <a href="index.html" class="logo">
+                    <img src="./image/logo.png" alt="bhairavi's cuisine">
+                </a>
+                <nav>
+                    <div class="nav__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </div>
+                    <div class="nav__bgOverlay"></div>
+                    <ul class="nav__list">
+                        <div class="nav__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="nav__list__wrapper">
+
+                            <li><a class="nav__link" href="./index.html">Home</a></li>
+                            <li><a class="nav__link" href="./menu.html">Menu</a></li>
+                            <li><a class="nav__link" href="./about.html">About</a></li>
+                            <li><a class="nav__link" href="./contact.html">Contact</a></li>
+                            <li><a href="./booking.html" class="btn primary-btn">Book Table</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- end nav -->
+    <!-- store info -->
+    <section class="store__info" data-aos="fade-up">
+        <div class="container">
+            <div class="storeInfo__wrapper">
+                <div class="storeInfo__item">
+                    <div class="storeInfo__icon">
+                        <img src="/image/clock.png" alt="clock">
+                    </div>
+                    <h3 class="storeInfo__title">10 AM - 9 PM</h3>
+                    <p class="storeInfo__text">Opening Hour</p>
+                </div>
+                <div class="storeInfo__item">
+                    <div class="storeInfo__icon">
+                        <img src="/image/placeholder.png" alt="address">
+                    </div>
+                    <h3 class="storeInfo__title">Pitampura, New Delhi</h3>
+                    <p class="storeInfo__text">Address</p>
+                </div>
+                <div class="storeInfo__item">
+                    <div class="storeInfo__icon">
+                        <img src="image/phone-call.png" alt="phone">
+                    </div>
+                    <h3 class="storeInfo__title">+919696763220</h3>
+                    <p class="storeInfo__text">Call Now</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end store info -->
+    <!-- contact and inquiry -->
+    <section id="form" data-aos="fade-down">
+        <div class="container">
+            <h3 class="form__title">
+                Contact & Inquiry
+            </h3>
+            <div class="form__wrapper">
+                <form name="contact" method="post" netlify>
+                    <div class="form__group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="First Name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="Last Name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="Subject" required>
+                    </div>
+                    <div class="form__group form__group__full">
+                        <label for="messsage">Message</label>
+                        <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- end contact and inquiry -->
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="index.html" class="logo">
+                        <img src="./image/logo.png" alt="bhairavi's cuisine">
+                    </a>
+                </div>
+                <div class="footer__socials">
+                    <div class="chef__social">
+                        <span class="social__icon">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </span>
+                        <span class="social__icon"><a href=""><i class="fa-brands fa-youtube"></i></a></span>
+                        <span class="social__icon"><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+                        <span class="social__icon"><a href=""><i class="fa-brands fa-twitter"></i></a></span>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p class="copyright__text">
+                        © 2022 Bhairavi’s Cuisine | All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- main.js -->
+    <script src="./main.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/df066ae190.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
